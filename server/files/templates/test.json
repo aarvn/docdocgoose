@@ -1,0 +1,16 @@
+{
+	"name":"Test",
+	"type":"test",
+	"class":"official",
+	"dateModified":"",
+	"vars":{
+		"test1":"",
+		"test2":"",
+		"test3":""
+	},
+	"forms":{
+		"1":["test1","test2"],
+		"2":["test3"]
+	},
+	"template":"This [*test1*] is a variable. Lorem [*test2*]  = [*test2*] however it is true that [*test3*]"
+}

@@ -1,0 +1,22 @@
+{
+    "name":"NDA",
+    "type":"nda",
+    "class":"official",
+    "dateModified":"",
+    "vars":{
+        "effectiveDate":"",
+        "p1Name":"",
+        "p1Street":"",
+        "p1County":"",
+        "p1Postcode":"",
+        "p2Name":"",
+        "p2Address":"",
+        "p2County":"",
+        "p2Postcode":""
+    },
+    "forms":{
+        "1":["effectiveDate","p1Name","p1Street","p1County","p1Postcode"],
+        "2":["p2Name","p2Address","p2County","p2Postcode"]
+    },
+    "template":"1. This Non-disclosure Agreement (this 'Agreement') is made effective as of [*effectiveDate*] (the 'Effective Date'), by and between [*p1Name*] (the 'Owner') of [*p1Street*], [*p1County*], [*p1Postcode*]. <br><br> 2. The Owner ([*p1Name*]) has requested and the Recipient ([*p2Name*]) agrees that the Recipient will protect the confidential material and information which may be disclosed between the Owner and Recipient.[*p2Address*], [*p2County*], [*p2Postcode*]."
+}

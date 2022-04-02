@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>DocDocGoose</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class = "header-left">
+                <a href = "index.html" ><img class = "logo" id = "logoBlack" src = "images/logoWhite.png" alt = "Logo"></a>
+                <a href = "index.html"><img class = "logo" id = "logoWhite" src = "images/logoBlack.png" alt = "Logo"></a>
+            </div>
+            <div class = "header-right">
+                <div class="burger" id = "burger" onclick="burgerToggle()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul>
+                    <li><a href = "#">Lorem</a></li>
+                    <li><a href = "#">Ipsum</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
+            <div class = "mobile-nav-left">
+                <ul>
+                    <li><a href = "#">Lorem</a></li>
+                    <li><a href = "#">Ipsum</a></li>  
+                </ul>
+            </div>
+            <div class = "mobile-nav-right">
+                <div class = "socials">
+                    <i class="fab fa-2x fa-facebook-f"></i>
+                    <i class="fab fa-2x fa-instagram"></i>
+                    <h4>hello@docdocgoose.co.uk</h4>
+                </div>
+            </div>
+        </section>
+        <section id = "sidebar">
+            <ul>
+                <li id = "sidebar-new" data-section = "new" class = "sidebar-btn"><img src = "images/icon-new.png" alt = "New"><span class = "li-text">New</span></li>
+                <li id = "sidebar-open" data-section = "open" class = "sidebar-btn"><img src = "images/icon-open.png" alt = "Open"><span class = "li-text">Open</span></li>
+            </ul>
+        </section>
+            
+        <section id = "main">
+            <section id = "new" class = "main-section">
+                <h1>New Document</h1>
+                <h4 class = "choose-template-text">Click on a Template</h4>
+                <div class = "horiz-line"></div>
+
+                <div id = "new-templates">
+                    <div id = "new-templates-official" class = "new-templates-class new-templates-class-active file-thumbnails-container">
+                        <!--Official templates go here-->
+                    </div>
+                    <h4 style = "margin-top:10px"><strong style = "color:red">Disclaimer:</strong> Obviously, these templates are not real or accurate, do not use them for any purpose.</h4>
+                </div>
+
+                <div id = "new-template-editor" class = "new-template-editor">
+                    <div class = "new-template-editor-inner">
+                        <h2>Official NDA Template</h2>
+                        <input placeholder = "Insert document name" id = "new-document-name" style = "text-align: center;">
+                        <div class = "btn" id = "new-document-btn">
+                            <h4>Create Document</h4>
+                        </div>
+                        <h5 id = "new-template-editor-close-btn">Close</h5>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "open" class = "main-section">
+                <h1>Open</h1>
+                <div class = "horiz-line"></div>
+                <div id = "open-documents" class = "file-thumbnails-container">
+                    <!--User documents go here-->
+                    <h2 style = "margin-top:10px; font-size:18px; text-align: center">You don't have any documents!<br>Click on the "+ New" menu tab and choose a template to get started.</h2>
+                </div>
+            </section>
+            
+            <section id = "document-editor" class = "document-editor">
+                <div id = "document-editor-form-container">
+                    <form id = "editor-form">
+
+                    </form>
+                    <div class = "btn-wrapper">
+                        <div id = "back-btn" class = "btn">Back</div>
+                        <div id = "continue-btn" class = "btn">Continue</div>
+                    </div>
+                </div>
+                <div id = "document-editor-output">
+                    <!--Editor output goes here-->
+                </div>
+                <div class = "editor-btn-wrapper">
+                    <div id = "export-btn" class = "btn">Export</div>
+                    <div id = "exit-btn" class = "btn close-document-editor-btn">Exit</div>
+                    
+                </div>
+            </section>        
+        </section>
+
+        <script src = "client.js"></script>
+        <script src = "header.js"></script>
+    </body>
+</html>

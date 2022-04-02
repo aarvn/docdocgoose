@@ -1,0 +1,24 @@
+{
+  "name": "docdocgoose",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest",
+    "pretest": "npx eslint server.js app.js api/documents.js api/documents.js api/encryptor.js"
+  },
+  "author": "Aaron Morris",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "description": ""
+}
